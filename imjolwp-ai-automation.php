@@ -134,6 +134,7 @@ function put_program_logs( $data ) {
     }
 }
 
+// Function to insert audio before the post content
 function insert_audio_before_post_content($content) {
     if (is_single()) {
         global $post;
@@ -147,4 +148,19 @@ function insert_audio_before_post_content($content) {
     return $content;
 }
 add_filter('the_content', 'insert_audio_before_post_content');
+
+// Function to insert video before the post content
+function insert_video_before_post_content($content) {
+    if (is_single()) {
+        global $post;
+        $attachment_id = get_post_meta($post->ID, '_video_attachment_id', true);
+        
+        if ($attachment_id) {
+            $video_shortcode = wp_video_shortcode(array('src' => wp_get_attachment_url($attachment_id)));
+            $content = $video_shortcode . $content;
+        }
+    }
+    return $content;
+}
+add_filter('the_content', 'insert_video_before_post_content');
 

@@ -6,6 +6,7 @@ namespace Imjolwp\Automation;
 use Imjolwp\Ai\Imjolwp_Ai_Automation_For_Wordpress_Ai_Description;
 use Imjolwp\Ai\Imjolwp_Ai_Automation_For_Wordpress_Ai_Image;
 use Imjolwp\Ai\Imjolwp_Ai_Automation_For_Wordpress_Ai_Audio;
+use Imjolwp\Ai\Imjolwp_Ai_Automation_For_Wordpress_Ai_Video;
 
 class Imjolwp_Ai_Automation_For_Wordpress_Queue{
 
@@ -18,6 +19,9 @@ class Imjolwp_Ai_Automation_For_Wordpress_Queue{
         }
         if(!class_exists('Imjolwp_Ai_Automation_For_Wordpress_Ai_Audio')){
             require_once plugin_dir_path( __FILE__ ) . '../ai/Imjolwp_Ai_Automation_For_Wordpress_Ai_Audio.php';
+        }
+        if(!class_exists('Imjolwp_Ai_Automation_For_Wordpress_Ai_Video')){
+            require_once plugin_dir_path( __FILE__ ) . '../ai/Imjolwp_Ai_Automation_For_Wordpress_Ai_Video.php';
         }
     }
 
@@ -125,6 +129,14 @@ class Imjolwp_Ai_Automation_For_Wordpress_Queue{
             $set_post_audio->generate_post_audio($main_content, $post_id);
         }else{
             $set_post_audio = null;
+        }
+
+        // Set video file
+        if(get_option('ai_post_video') == 1) {
+            $set_post_video = new Imjolwp_Ai_Automation_For_Wordpress_Ai_Video();
+            $set_post_video->generate_post_video($main_content, $post_id);
+        }else{
+            $set_post_video = null;
         }
 
         // Set post tags (this is handled separately)

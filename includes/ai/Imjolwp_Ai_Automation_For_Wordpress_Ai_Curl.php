@@ -133,7 +133,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Ai_Curl {
                     'Content-Type'  => 'application/json',
                     'Authorization' => 'Bearer ' . $api_key,
                 ),
-                'timeout'   => 45,  // Adjust the timeout as necessary
+                'timeout'   => 1200,  // Adjust the timeout as necessary
                 'data_format' => 'body',
             )
         );
