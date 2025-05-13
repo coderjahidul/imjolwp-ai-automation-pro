@@ -41,8 +41,6 @@ Class Imjolwp_Ai_Automation_For_Wordpress_Ai_Video{
         $curl = new Imjolwp_Ai_Automation_For_Wordpress_Ai_Curl();
         $response = $curl->make_video_generate_request($endpoint, $api_url, $api_key, $additional_payload, $model);
 
-        put_program_logs($response);
-
         $data = json_decode( $response, true );
         if(isset($data["video_url"])){
             
