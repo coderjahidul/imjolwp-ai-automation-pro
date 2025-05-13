@@ -1,0 +1,22 @@
+{
+    "name": "imjolwp/imjolwp-ai-automation",
+    "description": "ImjolWP is an AI-powered automation plugin that generates post titles, descriptions, images, summaries, audio, and videos using AI. It supports Elementor, automated scheduling, and a queue system to streamline content creation effortlessly.",
+    "autoload": {
+        "psr-4": {
+            "Imjolwp\\AI\\": "includes/ai/",
+            "Imjolwp\\Automation\\": "includes/automation/",
+            "Imjolwp\\Admin\\": "admin/",
+            "Imjolwp\\Public\\": "public/",
+            "Imjolwp\\": "includes/"
+
+        }
+
+    },
+    "authors": [
+        {
+            "name": "coderjahidul",
+            "email": "sobuz0349@gmail.com"
+        }
+    ],
+    "require": {}
+}
