@@ -13,7 +13,7 @@
  * @package           Imjolwp_Ai_Automation_For_Wordpress
  *
  * @wordpress-plugin
- * Plugin Name:       ImjolWP - AI Automation
+ * Plugin Name:       ImjolWP - AI Automation Pro
  * Plugin URI:        https://github.com/coderjahidul/imjolwp-ai-automation
  * Description:       ImjolWP is an AI-powered automation plugin that generates post titles, descriptions, images, summaries, audio, and videos using AI. It supports Elementor, automated scheduling, and a queue system to streamline content creation effortlessly.
  * Version:           1.0.0

@@ -1,1 +1,1 @@
-# imjolwp-ai-automation
+# imjolwp-ai-automation-pro
