@@ -2,7 +2,7 @@
 Contributors: imjolwp, mdjahidulislam, sabuz
 Tags: ai, automation, content generation, wordpress ai, post automation
 Requires at least: 5.8
-Tested up to: 6.5
+Tested up to: 6.8
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -35,7 +35,7 @@ Generate scheduled posts using the built-in automation and queue manager.
 
 1. Download the plugin ZIP file.
 2. In your WordPress dashboard, go to **Plugins > Add New > Upload Plugin**.
-3. Upload `imjolwp-ai-automation.zip`, then click **Install Now**.
+3. Upload `imjolwp-ai-automation-pro.zip`, then click **Install Now**.
 4. Click **Activate Plugin**.
 5. Go to **ImjolWP AI > Settings** to configure your DeepInfra API Key.
 

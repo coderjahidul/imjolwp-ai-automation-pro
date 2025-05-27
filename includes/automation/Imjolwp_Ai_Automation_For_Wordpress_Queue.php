@@ -151,10 +151,10 @@ class Imjolwp_Ai_Automation_For_Wordpress_Queue{
         }
 
         if ($post_id) {
-            echo '<div class="updated"><p>' . esc_html__('AI Content Generated!', 'imjolwp-ai-automation') . 
-                 ' <a href="' . esc_url(get_edit_post_link($post_id)) . '">' . esc_html__('Edit Post', 'imjolwp-ai-automation') . '</a></p></div>';
+            echo '<div class="updated"><p>' . esc_html__('AI Content Generated!', 'imjolwp-ai-automation-pro') . 
+                 ' <a href="' . esc_url(get_edit_post_link($post_id)) . '">' . esc_html__('Edit Post', 'imjolwp-ai-automation-pro') . '</a></p></div>';
         } else {
-            echo '<div class="error"><p>' . esc_html__('Failed to generate content.', 'imjolwp-ai-automation') . '</p></div>';
+            echo '<div class="error"><p>' . esc_html__('Failed to generate content.', 'imjolwp-ai-automation-pro') . '</p></div>';
         }
         
     }

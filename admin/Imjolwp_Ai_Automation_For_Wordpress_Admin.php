@@ -281,7 +281,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 		check_ajax_referer('toggle_ai_feature_nonce');
 
 		if (!current_user_can('manage_options')) {
-			wp_die(esc_html__('Nonce verification failed.', 'imjolwp-ai-automation'));
+			wp_die(esc_html__('Nonce verification failed.', 'imjolwp-ai-automation-pro'));
 		}
 
 		$feature = isset($_POST['feature']) ? sanitize_text_field(wp_unslash($_POST['feature'])) : '';
@@ -290,9 +290,9 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 
 		if (!empty($feature)) {
 			update_option($feature, $status);
-			wp_send_json_success(['message' => __('Setting updated.', 'imjolwp-ai-automation')]);
+			wp_send_json_success(['message' => __('Setting updated.', 'imjolwp-ai-automation-pro')]);
 		} else {
-			wp_send_json_error(['message' => __('Invalid feature.', 'imjolwp-ai-automation')]);
+			wp_send_json_error(['message' => __('Invalid feature.', 'imjolwp-ai-automation-pro')]);
 		}
 	}
 

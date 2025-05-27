@@ -36,7 +36,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'imjolwp-ai-automation',
+			'imjolwp-ai-automation-pro',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
