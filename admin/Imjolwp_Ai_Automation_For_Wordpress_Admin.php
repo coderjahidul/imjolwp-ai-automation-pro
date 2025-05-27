@@ -169,16 +169,6 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 			array($this, 'imjolwp_ai_scheduled_posts_page')
 		);
 
-		// add_menu_page(
-		// 	'Scheduled AI Posts',
-		// 	'AI Scheduled Posts',
-		// 	'manage_options',
-		// 	'imjolwp-ai-scheduled-posts',
-		// 	'imjolwp_ai_scheduled_posts_page',
-		// 	'dashicons-schedule',
-		// 	25
-		// );
-
 		add_submenu_page(
             'imjolwp-ai-dashboard',
             'AI Post Generator',

@@ -50,19 +50,15 @@ use Imjolwp\Imjolwp_Ai_Automation_For_Wordpress_Deactivator;
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-imjolwp-ai-automation-activator.php
  */
 function imjolwp_ai_automation_for_wordpress_activate() {
-	// require_once plugin_dir_path( __FILE__ ) . 'includes/class-imjolwp-ai-automation-activator.php';
 	Imjolwp_Ai_Automation_For_Wordpress_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-imjolwp-ai-automation-deactivator.php
  */
 function deimjolwp_ai_automation_for_wordpress_activate() {
-	// require_once plugin_dir_path( __FILE__ ) . 'includes/class-imjolwp-ai-automation-deactivator.php';
 	Imjolwp_Ai_Automation_For_Wordpress_Deactivator::deactivate();
 }
 
