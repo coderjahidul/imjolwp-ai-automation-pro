@@ -13,7 +13,8 @@ class Imjolwp_Ai_Automation_For_Wordpress_Settings {
 	public function display_settings_page() {
 		?>
 			<div class="wrap">
-				<h1>ImjolWP AI Settings</h1>
+				<h1>Deepinfra API Settings</h1>
+				<p>Configure the Deepinfra API settings.</p>
 				<form method="post" action="options.php">
 					<?php
 					settings_fields( 'imjolwp_ai_options_group' ); // Register settings group

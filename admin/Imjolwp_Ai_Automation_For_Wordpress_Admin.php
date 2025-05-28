@@ -210,7 +210,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 		// Add the section to settings page
 		add_settings_section(
 			'imjolwp_ai_settings_section',  // Section ID
-			'API Configuration',            // Section Title
+			'',            					// Section Title
 			null,                           // Callback for description (null for no description)
 			'imjolwp-ai-settings'           // Settings page slug
 		);
@@ -218,7 +218,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 		// Add fields to the section
 		add_settings_field(
 			'imjolwp_ai_api_url_field',     // Field ID
-			'API URL',                      // Field label
+			'Deepinfra API URL:',                      // Field label
 			array( $this, 'display_api_url_field' ), // Callback function to display the field
 			'imjolwp-ai-settings',          // Settings page slug
 			'imjolwp_ai_settings_section'   // Section ID
@@ -226,7 +226,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 
 		add_settings_field(
 			'imjolwp_ai_api_key_field',     // Field ID
-			'API Key',                      // Field label
+			'Deepinfra API Key:',                      // Field label
 			array( $this, 'display_api_key_field' ), // Callback function to display the field
 			'imjolwp-ai-settings',          // Settings page slug
 			'imjolwp_ai_settings_section'   // Section ID
@@ -240,7 +240,7 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 	 */
 	public function display_api_url_field() {
 		$api_url = get_option( 'imjolwp_ai_api_url' ); // Get the current saved API URL
-		echo "<label for='imjolwp_ai_api_url'><strong>Deepinfra API URL:</strong></label><br>";
+		// echo "<label for='imjolwp_ai_api_url'><strong>Deepinfra API URL:</strong></label><br>";
 		echo "<input type='text' id='imjolwp_ai_api_url' placeholder='Enter Deepinfra API URL' name='imjolwp_ai_api_url' value='" . esc_attr( $api_url ) . "' class='regular-text' />";
 		// Example
 		echo "<p>Example: https://api.deepinfra.com</p>";
@@ -253,11 +253,8 @@ class Imjolwp_Ai_Automation_For_Wordpress_Admin {
 	 */
 	public function display_api_key_field() {
 		$api_key = get_option( 'imjolwp_ai_api_key' ); // Get the current saved API Key
-		echo "<label for='imjolwp_ai_api_key'><strong>Deepinfra API Key:</strong></label><br>";
+		// echo "<label for='imjolwp_ai_api_key'><strong>Deepinfra API Key:</strong></label><br>";
 		echo "<input type='password' id='imjolwp_ai_api_key' placeholder='Enter Deepinfra API Key' name='imjolwp_ai_api_key' value='" . esc_attr( $api_key ) . "' class='regular-text' />";
-
-		// Example
-		echo "<p>Example: 1w23w4w56w78e9r0</p>";
 	}
 
 
