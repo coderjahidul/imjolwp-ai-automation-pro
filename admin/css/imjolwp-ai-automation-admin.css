@@ -300,7 +300,7 @@ input:checked + .slider:before {
 }
 
 /* Setting Page */
-.wrap {
+.wrap-settings {
     max-width: 35%;
     margin: 0 auto;
     padding: 25px;
